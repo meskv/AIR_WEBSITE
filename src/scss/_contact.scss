@@ -1,0 +1,144 @@
+.top-contact-wrapper {
+  box-shadow: 0 0 0.1rem $shadow-light;
+  // background: $dark-bg;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0.2rem;
+
+  .item {
+    @include glassFilter(1.2px, 0.12);
+    box-shadow: 0 0 0.5rem $shadow-light;
+    padding: 1.5rem;
+    width: 300px;
+    height: 300px;
+    flex: 1 1 300px;
+    border-radius: 5px;
+  }
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: $baloo-bhai;
+    text-align: center;
+  }
+
+  .address-info {
+    .desc {
+      i {
+        text-align: center;
+        display: block;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        color: $orange;
+      }
+      p {
+        display: block;
+        text-align: justify;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        font-family: $poppins;
+        font-weight: 400;
+        line-height: 1.3;
+
+        width: 70%;
+        margin: 0 auto;
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    margin-bottom: 2rem;
+    .desc {
+      padding: 0 1rem;
+      i {
+        text-align: left;
+        display: inline;
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: $orange;
+      }
+      p {
+        display: inline;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: $roboto;
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.contact-section {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 1rem;
+
+  .contact-card {
+    box-shadow: 0 0 8px $shadow-light;
+    width: 300px;
+    border-radius: 5px;
+    padding: 1.3rem;
+    line-height: 25px;
+    font-size: 16px;
+    margin-top: 1rem;
+
+    .profile-info {
+      .contact-card-title {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      p {
+        line-height: 2;
+      }
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}
+
+.profile-img {
+  img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid $border-dark;
+  }
+}
+
+.form-section {
+  .collapsible {
+    background: transparent;
+    border: none;
+    margin: 0.5rem auto !important;
+
+    .collapsible-header {
+      background: transparent;
+      padding: 0.3rem !important;
+    }
+
+    .page-subtitle {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}

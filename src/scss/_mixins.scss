@@ -1,0 +1,20 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin underline($bg-color) {
+  @include border-radius(0.3rem);
+
+  width: 6rem;
+  height: 0.4rem;
+  background-color: $bg-color;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+@mixin glass-morphism($blur) {
+  backdrop-filter: blur($blur);
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}

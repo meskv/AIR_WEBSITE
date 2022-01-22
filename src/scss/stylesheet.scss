@@ -1,0 +1,203 @@
+@import "./vairable";
+@import "./font";
+@import "./mixins";
+@import "./global";
+
+@import "./nav";
+@import "./about";
+@import "./card";
+@import "./team";
+@import "./event";
+@import "./courses";
+@import "./contact";
+@import "./web_team";
+@import "./swiper";
+@import "./footer";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: $black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $orange;
+  border-radius: 5rem;
+}
+
+body {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.container,
+.parallax-container {
+  // width: 100vw;
+  // margin: 1.5rem auto;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Styling */
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: $white;
+  padding-bottom: 100px;
+}
+
+.text-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: fit-content;
+  color: $white;
+  padding: 2%;
+  margin: 0%;
+  display: block;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+}
+
+.hero-btn {
+  color: $white;
+  border: 1px solid $white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgb(111, 78, 55);
+    background: $white;
+    color: $black;
+    transition: 0.5s;
+  }
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 10px;
+
+  span {
+    font-weight: 550;
+    color: $orange;
+  }
+
+
+}
+
+.page-subtitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 550;
+  color: $black;
+
+  h3 {
+    font-size: 2.1rem;
+    color: $subheading-dark;
+  }
+}
+
+.centre-subtitle {
+  font-size: 20px;
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* down -btn */
+.down-btn {
+  position: absolute;
+
+  .round-btn {
+    i {
+      border: none;
+      border-radius: 50%;
+      background-color: $white;
+      color: $orange;
+      position: relative;
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+      &:hover {
+        color: $white;
+        background-color: $orange;
+        transform: scale();
+        transition: 0.6s ease-in;
+        animation: normal;
+      }
+    }
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-blend-mode: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  transition: 0.2s ease-out;
+  color: $white;
+  text-align: center;
+}
+
+.mid {
+  display: block;
+  margin: 0 auto;
+}
+
+.p-info {
+  text-align: justify;
+}
+
+.pulse a:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;
+}
+
+// media query
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 992px) {
+}

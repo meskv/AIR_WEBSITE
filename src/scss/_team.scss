@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .title {
+  text-align: center;
+}
+
+/* div {
+    display: block;
+    position: relative;
+  } */
+
+.profile-box {
+  box-shadow: 0 0 0.5rem $shadow-light;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  width: 300px;
+  padding: 2rem 0;
+  border-radius: 5px;
+  margin: 16px;
+  transition: 0.3s all ease-in-out;
+
+  .profile-img {
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.01);
+      opacity: 0.8;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .member-info {
+    h3 {
+      color: #28262d;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: none;
+    }
+
+    p {
+      color: $text-light;
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 0%;
+    }
+  }
+
+  .social-handle a {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.profile-box:hover .member-info p {
+  color: $text-light;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 0%;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+
+  &:hover {
+    transition: 0.5s ease-in;
+    color: $white;
+    background-color: $orange;
+  }
+}
+
+.btn-dark {
+  color: $white;
+  background: #343a40;
+  border-color: #343a40;
+}
+
+.round {
+  border-radius: 50% !important;
+}
+
+// for padding of buttons
+.ml-2,
+.mx-2 {
+  margin-left: 8px !important;
+}
+
+.mr-2,
+.mx-2 {
+  margin-right: 8px !important;
+}
+
+/* Media queries */
+
+// @media (min-width: 992px) {
+//     .container {
+//       max-width: 960px;
+//     }
+//   }
+//     @media (min-width: 768px) {
+//       .container {
+//         max-width: 720px;
+//       }
+//     }
+//     @media (min-width: 576px) {
+//     .container {
+//       max-width: 540px;
+//     }
+//   }

@@ -1,0 +1,66 @@
+@mixin underline($thick-color, $thin-color) {
+  position: relative;
+  width: 20rem;
+  height: 1px;
+  background: $thin-color;
+  border-radius: 2rem;
+  margin: 1rem auto;
+
+  &::before {
+    content: "";
+    width: 6rem;
+    height: 0.6rem;
+    background: $thick-color;
+    border-radius: 2rem;
+    position: absolute;
+    top: -5px;
+    left: 35%;
+  }
+}
+
+.page-info {
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: $poppins;
+  color: $white;
+
+  span {
+    color: $ascent-color;
+  }
+}
+
+.underline {
+  @include underline($orange, $grey);
+  margin-top: 1rem;
+}
+
+@mixin glassFilter($blurVal, $opacity) {
+  background: rgba(255, 255, 255, $opacity);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur($blurVal);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.button {
+  padding: 0.8rem 2rem;
+  border-radius: 3.3rem;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+
+  color: $white;
+  background: $orange;
+  box-shadow: 0 0 0.5rem $shadow-dark;
+  transition: 0.4s ease-in;
+  animation: dance 1s infinite;
+
+  &:hover {
+    color: $black;
+    background: $white;
+    box-shadow: 0 0 5px $shadow-dark;
+  }
+}
