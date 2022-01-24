@@ -5,8 +5,9 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
+import SliderList from "./SliderList";
 
-export default () => {
+export default (props) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -20,6 +21,9 @@ export default () => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
+      {/* <SliderList swiperList={props.swiperList} /> */}
+
+
       <SwiperSlide>
         <div className="swiper-slide">
           <div

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages";
 import Events from "./pages/events";
 import Courses from "./pages/courses";
@@ -9,7 +10,23 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Webteam from "./pages/webteam";
 
+
+
 function App() {
+
+  const swiperSlideDetails = [
+    {
+      bgImage: "/images/Home/bg1.jpg",
+      sliderHeading: "AI, ROBOTICS, AND THE FUTURE OF JOBS",
+      sliderDescription: "Automation is Voldemort: the terrifying force nobody is willing to name",
+    },
+    {
+      bgImage: "/images/Home/bg2.jpg",
+      sliderHeading: "AI, ROBOTICS, AND THE FUTURE OF JOBS",
+      sliderDescription: "Automation is Voldemort: the terrifying force nobody is willing to name",
+    }
+  ]
+  
   const memberDetails = [
     {
       image: "/images/dummy_pic.jpg",
@@ -38,17 +55,17 @@ function App() {
       position: "Member",
       mailId: "krsk1495@gmail.com",
       github: "https://github.com/meskv",
-      insta: "https://instagram.com/meskv",
-      linkedIn: "https://linkedin.com/meskv",
+      insta: "https://instagram.com/me_skv",
+      linkedIn: "https://linkedin.com/in/me-skv",
     },
     {
       image: "../images/Team/Web-Team/RITVIK G.jfif",
       name: "Ritvik G",
       position: "Member",
-      mailId: "mail@gmail.com",
+      mailId: "",
       github: "https://github.com/Ritvik-G",
-      insta: "https://instagram.com/username",
-      linkedIn: "https://linkedin.com/username",
+      insta: "",
+      linkedIn: "https://linkedin.com/in/ritvikg",
     },
   ];
 
@@ -56,13 +73,15 @@ function App() {
     {
       image: "/images/Home/bg1.jpg",
       title: "Course 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione et sint unde vel suscipit natus nisi corrupti iure libero dicta error, dolores expedita dolor tempora perferendis inventore molestiae eligendi!",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione et sint unde vel suscipit natus nisi corrupti iure libero dicta error, dolores expedita dolor tempora perferendis inventore molestiae eligendi!",
       link: "link",
     },
     {
       image: "/images/Home/bg1.jpg",
       title: "Course 2",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione et sint unde vel suscipit natus nisi corrupti iure libero dicta error, dolores expedita dolor tempora perferendis inventore molestiae eligendi!",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione et sint unde vel suscipit natus nisi corrupti iure libero dicta error, dolores expedita dolor tempora perferendis inventore molestiae eligendi!",
       link: "link",
     },
   ];
@@ -73,7 +92,8 @@ function App() {
       aurhor: "author name",
       date: "01 01 2022",
       title: "Course 1",
-      description: "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
+      description:
+        "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
       link: "link",
     },
     {
@@ -81,11 +101,13 @@ function App() {
       aurhor: "author name",
       date: "01 01 2022",
       title: "Course 2",
-      description: "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
+      description:
+        "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
       link: "link",
     },
   ];
 
+  const [swiperList, setswiperList] = useState(swiperSlideDetails);
   const [userList, setuserList] = useState(memberDetails);
   const [webTeamList, setwebTeamList] = useState(webTeamDetails);
   const [courseList, setcourseList] = useState(courseDetails);
@@ -94,7 +116,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" exact element={<Home />} />
+        <Route exact path="/" exact element={<Home swiperList={swiperList} />} />
         <Route exact path="/events" exact element={<Events />} />
         <Route
           exact
@@ -108,7 +130,12 @@ function App() {
           exact
           element={<Team userList={userList} />}
         />
-        <Route exact path="/blog" exact element={<Blog cardList={cardList} />} />
+        <Route
+          exact
+          path="/blog"
+          exact
+          element={<Blog cardList={cardList} />}
+        />
         <Route exact path="/contact" exact element={<Contact />} />
         <Route
           exact
