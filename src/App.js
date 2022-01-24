@@ -10,10 +10,7 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Webteam from "./pages/webteam";
 
-
-
 function App() {
-
   const memberDetails = [
     {
       image: "/images/dummy_pic.jpg",
@@ -97,33 +94,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home  />} />
-        <Route exact path="/events" element={<Events />} />
-        <Route
-          exact
-          path="/courses"
-        
-          element={<Courses courseList={courseDetails} />}
-        />
-        <Route
-          exact
-          path="/team"
-        
-          element={<Team userList={memberDetails} />}
-        />
-        <Route
-          exact
-          path="/blog"
-        
-          element={<Blog cardList={cardDetails} />}
-        />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route
-          exact
-          path="/webteam"
-        
-          element={<Webteam webTeamList={webTeamDetails} />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="events" element={<Events />} />
+        <Route path="courses" element={<Courses courseList={courseDetails} />} />
+        <Route path="team" element={<Team userList={memberDetails} />} />
+        <Route path="blog" element={<Blog cardList={cardDetails} />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="webteam" element={<Webteam webTeamList={webTeamDetails} />} />
       </Routes>
     </BrowserRouter>
   );
