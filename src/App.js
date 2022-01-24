@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -14,19 +14,6 @@ import Webteam from "./pages/webteam";
 
 function App() {
 
-  const swiperSlideDetails = [
-    {
-      bgImage: "/images/Home/bg1.jpg",
-      sliderHeading: "AI, ROBOTICS, AND THE FUTURE OF JOBS",
-      sliderDescription: "Automation is Voldemort: the terrifying force nobody is willing to name",
-    },
-    {
-      bgImage: "/images/Home/bg2.jpg",
-      sliderHeading: "AI, ROBOTICS, AND THE FUTURE OF JOBS",
-      sliderDescription: "Automation is Voldemort: the terrifying force nobody is willing to name",
-    }
-  ]
-  
   const memberDetails = [
     {
       image: "/images/dummy_pic.jpg",
@@ -107,41 +94,35 @@ function App() {
     },
   ];
 
-  const [swiperList, setswiperList] = useState(swiperSlideDetails);
-  const [userList, setuserList] = useState(memberDetails);
-  const [webTeamList, setwebTeamList] = useState(webTeamDetails);
-  const [courseList, setcourseList] = useState(courseDetails);
-  const [cardList, setcardList] = useState(cardDetails);
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" exact element={<Home swiperList={swiperList} />} />
-        <Route exact path="/events" exact element={<Events />} />
+        <Route exact path="/" element={<Home  />} />
+        <Route exact path="/events" element={<Events />} />
         <Route
           exact
           path="/courses"
-          exact
-          element={<Courses courseList={courseList} />}
+        
+          element={<Courses courseList={courseDetails} />}
         />
         <Route
           exact
           path="/team"
-          exact
-          element={<Team userList={userList} />}
+        
+          element={<Team userList={memberDetails} />}
         />
         <Route
           exact
           path="/blog"
-          exact
-          element={<Blog cardList={cardList} />}
+        
+          element={<Blog cardList={cardDetails} />}
         />
-        <Route exact path="/contact" exact element={<Contact />} />
+        <Route exact path="/contact" element={<Contact />} />
         <Route
           exact
           path="/webteam"
-          exact
-          element={<Webteam webTeamList={webTeamList} />}
+        
+          element={<Webteam webTeamList={webTeamDetails} />}
         />
       </Routes>
     </BrowserRouter>

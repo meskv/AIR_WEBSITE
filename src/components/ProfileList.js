@@ -6,7 +6,7 @@ export default function ProfileList(props) {
     props.userList.map((member, i) => {
       return (
         <>
-          <Profile member={member} index={i} key={i} />
+          <Profile member={member} index={i} />
         </>
       );
     })

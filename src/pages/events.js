@@ -20,7 +20,7 @@ class Events extends React.Component {
               <div className="box">
                 <div className="box-content">
                   <div className="img-box">
-                    <img src="../images/Home/bg2.jpeg" />
+                    <img src="../images/Home/bg2.jpeg" alt="bg2"/>
                   </div>
                   <div className="content">
                     <h3>This is heading</h3>
@@ -38,7 +38,7 @@ class Events extends React.Component {
               <div className="box">
                 <div className="box-content">
                   <div className="img-box">
-                    <img src="../images/Home/bg2.jpeg" />
+                    <img src="../images/Home/bg2.jpeg" alt="bg-img" />
                   </div>
                   <div className="content">
                     <h3>This is heading</h3>
@@ -56,7 +56,7 @@ class Events extends React.Component {
               <div className="box">
                 <div className="box-content">
                   <div className="img-box">
-                    <img src="../images/Home/bg2.jpeg" />
+                    <img src="../images/Home/bg2.jpeg" alt="bg-img" />
                   </div>
                   <div className="content">
                     <h3>This is heading</h3>
@@ -74,7 +74,7 @@ class Events extends React.Component {
               <div className="box">
                 <div className="box-content">
                   <div className="img-box">
-                    <img src="../images/Home/bg2.jpeg" />
+                    <img src="../images/Home/bg2.jpeg" alt="bg-img" />
                   </div>
                   <div className="content">
                     <h3>This is heading</h3>
@@ -92,7 +92,7 @@ class Events extends React.Component {
               <div className="box">
                 <div className="box-content">
                   <div className="img-box">
-                    <img src="../images/Home/bg2.jpeg" />
+                    <img src="../images/Home/bg2.jpeg" alt="bg-img" />
                   </div>
                   <div className="content">
                     <h3>This is heading</h3>

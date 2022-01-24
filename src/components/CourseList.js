@@ -6,7 +6,7 @@ export default function courseList(props) {
     props.courseList.map((course, i) => {
       return (
         <>
-          <Course course={course} index={i} key={i} />
+          <Course course={course} index={i} />
         </>
       );
     })

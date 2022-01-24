@@ -10,7 +10,7 @@ class Navbar extends React.Component {
             <div className="logo">
               <div className="logo-img">
                 <a href="/" style={{ display: "block" }}>
-                  <img src="./images/logo.png" />
+                  <img src="./images/logo.png" alt="logo-img" />
                 </a>
               </div>
               <div className="logo-text">
@@ -72,7 +72,7 @@ class Navbar extends React.Component {
                 <a href="/contact">Contact Us</a>
               </li>
             </ul>
-            <a href="#" data-target="nav-mobile" className="sidenav-trigger">
+            <a data-target="nav-mobile" className="sidenav-trigger" href="#!">
               <i className="material-icons">menu</i>
             </a>
           </div>

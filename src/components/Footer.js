@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -77,10 +76,10 @@ export default function Footer() {
                 <a className="white-text" href="#!">
                   <i className="fab fa-linkedin btn btn-social btn-dark" />
                 </a>
-                <a className="white-text">
+                <a className="white-text" href="#!">
                   <i className="fas fa-envelope-square btn btn-social btn-dark" />
                 </a>
-                <a className="white-text">
+                <a className="white-text" href="#!">
                   <i className="fas fa-phone-square btn btn-social btn-dark" />
                 </a>
               </ul>
