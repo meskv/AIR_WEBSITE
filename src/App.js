@@ -95,12 +95,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="events" element={<Events />} />
-        <Route path="courses" element={<Courses courseList={courseDetails} />} />
-        <Route path="team" element={<Team userList={memberDetails} />} />
-        <Route path="blog" element={<Blog cardList={cardDetails} />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="webteam" element={<Webteam webTeamList={webTeamDetails} />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/courses" element={<Courses courseList={courseDetails} />} />
+        <Route path="/team" element={<Team userList={memberDetails} />} />
+        <Route path="/blog" element={<Blog cardList={cardDetails} />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/webteam" element={<Webteam webTeamList={webTeamDetails} />} />
       </Routes>
     </BrowserRouter>
   );
