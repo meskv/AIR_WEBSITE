@@ -20,6 +20,7 @@ export default function Card(props) {
             ea explicabo aspernatur. Voluptates eligendi explicabo provident,
             iusto voluptatibus itaque ut ab vel incidunt!
           </p>
+          <a href="/article">Read More</a>
         </div>
       </div>
     </>

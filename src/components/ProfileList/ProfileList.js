@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 
 export default function ProfileList(props) {
   return props.userList.length > 0 ? (

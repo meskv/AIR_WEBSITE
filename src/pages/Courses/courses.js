@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import CourseList from "../components/CourseList";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import CourseList from "../../components/CourseList/CourseList";
 
 export default function Courses(props) {
   return (

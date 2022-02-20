@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
-import ProfileList from "../components/ProfileList";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import ProfileList from "../../components/ProfileList/ProfileList";
 
 class Webteam extends React.Component {
   state = {};

@@ -1,5 +1,5 @@
 import React from "react";
-import Course from "./Course";
+import Course from "./Course/Course";
 
 export default function courseList(props) {
   return props.courseList.length > 0 ? (

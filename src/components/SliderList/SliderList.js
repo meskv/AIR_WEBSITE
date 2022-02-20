@@ -1,5 +1,5 @@
 import React from 'react';
-import Slides from './Slides';
+import Slides from './Slides/Slides';
 
 export default function SliderList(props) {
     return props.swiperList.length > 0 ? (
