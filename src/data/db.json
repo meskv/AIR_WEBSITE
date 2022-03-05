@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "author": "author name",
+      "date": "01 01 2022",
+      "title": "Why technical knowledge is important 1",
+      "image": "/images/Home/bg1.jpg",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
+      "body": "fwgagragrargarhae",
+      "link": "link",
+      "id": 1
+    },
+    {
+      "date": "01 01 2022",
+      "author": "author name",
+      "title": "Why technical knowledge is important 2",
+      "image": "./images/Home/bg1.jpg",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
+      "body": "fwgagragrargarhae",
+      "link": "link",
+      "id": 2
+    },
+    {
+      "date": "2022-02-24",
+      "author": "Author Name",
+      "title": "Title 3",
+      "image": "",
+      "description": "Blog Description",
+      "body": "Blog Body",
+      "link": "",
+      "id": 3
+    }
+  ]
+}
