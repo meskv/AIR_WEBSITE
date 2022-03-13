@@ -1,28 +1,32 @@
 import React from "react";
 
-export default function Card(props) {
+const Post = (props) => {
+  const url = props.post.image ? props.post.image : "/images/Home/bg1.jpg";
+
+  const addElipis = (str, limit) => {
+    return str.length > limit ? str.substring(0, limit) : str;
+  };
+
   return (
     <>
       <div className="post-container col s12 m4">
         <div className="banner">
-          <img className="banner-image" src= {props.card.image} alt="" />
+          <img className="banner-image" src={url} alt="" />
         </div>
         <div className="post-body">
           <div className="post-info">
-            <p className="author-name">{props.card.author}</p>
-            <p className="publish-date">Jan 01 2022</p>
+            <p className="author-name">{props.post.author}</p>
+            <p className="publish-date">{props.post.createdDate}</p>
           </div>
-          <h5 className="post-title">
-            Lorem ipsum dolor sit amet consectetur.
-          </h5>
+          <h5 className="post-title">{addElipis(props.post.title, 30)}</h5>
           <p className="post-description">
-            This post will present it amet consectetur, adipisicing elit. Optio
-            ea explicabo aspernatur. Voluptates eligendi explicabo provident,
-            iusto voluptatibus itaque ut ab vel incidunt!
+            {addElipis(props.post.description, 100)}
           </p>
-          <a href="/article">Read More</a>
+          <a href={props.post.link}>Read More</a>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default Post;

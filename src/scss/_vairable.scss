@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,400&display=swap");
 
+$baloo-bhai: "Baloo Bhai 2", sans-serif;
+$roboto: "Roboto", sans-serif;
+$poppins: "Poppins", sans-serif;
 
-$baloo-bhai: 'Baloo Bhai 2', sans-serif;
-$roboto: 'Roboto', sans-serif;
-$poppins: 'Poppins', sans-serif;
-
-$orange: #da7e16;
 $white: #fff;
 $black: #000;
+
+$light: #fff;
+$dark: #000;
+$orange: #da7e16;
 $grey: rgb(179, 163, 163);
 $dark-bg: rgba(0, 0, 0, 0.6);
 $light-bg: rgba(172, 156, 156, 0.6);
 
 $text-dark: #222;
 $text-light: #6e6e6e;
+
+$lightgrey: rgb(138, 133, 133);
+$darkgrey: rgb(80, 78, 78);
 // $text-light: #999;
 
 $border-dark: rgba(0, 0, 0, 0.1);
@@ -31,15 +36,6 @@ $btn-hover-dark: #222;
 $ascent-color: #da7e16;
 $orange: #da7e16;
 
-$subheading-dark: #2F4858;
+$subheading-dark: #2f4858;
 
-$linear-gradient:linear-gradient(
-    to right bottom,
-    #17181a,
-    #141821,
-    #101929,
-    #0b1930,
-    #051937
-  );
-
-
+$linear-gradient: linear-gradient(to right bottom, #17181a, #141821, #101929, #0b1930, #051937);

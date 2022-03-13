@@ -1,16 +1,57 @@
 import React from "react";
-import Card from "./Card/Card";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-export default function CardList(props) {
-  return props.cardList.length > 0 ? (
-    props.cardList.map((card, i) => {
+import Card from "./Card/Card";
+// import { getAllPosts } from "../../service/api";
+import { cardDetails } from "../../static data/cardDetails";
+
+const style = {
+  textDecoration: "none",
+};
+
+const CardList = () => {
+  const [posts, setPosts] = useState([]);
+  const { search } = useLocation();
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const data = cardDetails;
+      // let data = await getAllPosts(search);
+      console.log(data);
+      setPosts(data);
+    };
+    fetchPosts();
+  }, [search]);
+
+  return posts.length > 0 ? (
+    posts.map((p, i) => {
+      const link = `/article`;
       return (
         <>
-          <Card card={card} index={i} key={i} />
+          <Link to={link} style={style}>
+            <Card post={p} link={link} />
+          </Link>
         </>
       );
     })
   ) : (
-    <h1>No courses exists</h1>
+    <h4>No Posts exists</h4>
   );
-}
+
+  // return props.cardList.length > 0 ? (
+  //   props.cardList.map((card, i) => {
+  //     return (
+  //       <>
+  //         <Link to="/details" style={style}>
+  //           <Card card={card} index={i} key={i} />
+  //         </Link>
+  //       </>
+  //     );
+  //   })
+  // ) : (
+  //   <h1>No Posts exists</h1>
+  // );
+};
+
+export default CardList;

@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ProfileList from "../../components/ProfileList/ProfileList";
+import { memberDetails } from "../../static data/memberDetails";
 
-export default function Team(props) {
+
+const Team = (props) => {
   return (
     <>
       <Navbar />
@@ -19,7 +21,7 @@ export default function Team(props) {
             <h3>Joint Seceratory</h3>
           </div>
           <div className="container flex">
-            <ProfileList userList={props.userList} />
+            <ProfileList userList={memberDetails} />
           </div>
         </div>
         <div>
@@ -27,7 +29,7 @@ export default function Team(props) {
             <h3>Executives</h3>
           </div>
           <div className="container flex">
-            <ProfileList userList={props.userList} />
+            <ProfileList userList={memberDetails} />
           </div>
         </div>
         <div>
@@ -35,11 +37,13 @@ export default function Team(props) {
             <h3>Members</h3>
           </div>
           <div className="container flex">
-            <ProfileList userList={props.userList} />
+            <ProfileList userList={memberDetails} />
           </div>
         </div>
       </section>
       <Footer />
     </>
   );
-}
+};
+
+export default Team;

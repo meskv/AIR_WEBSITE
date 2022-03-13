@@ -3,7 +3,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CourseList from "../../components/CourseList/CourseList";
 
-export default function Courses(props) {
+import { courseDetails } from "../../static data/courseDetails";
+
+const Courses = (props) => {
   return (
     <>
       <Navbar />
@@ -15,11 +17,13 @@ export default function Courses(props) {
           <div className="underline" />
         </div>
         <div className="wrapper">
-          <CourseList courseList={props.courseList} />
+          <CourseList courseList={courseDetails} />
         </div>
       </main>
 
       <Footer />
     </>
   );
-}
+};
+
+export default Courses;

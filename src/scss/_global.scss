@@ -45,7 +45,6 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
 .button {
   padding: 0.8rem 2rem;
   border-radius: 3.3rem;
@@ -63,4 +62,8 @@
     background: $white;
     box-shadow: 0 0 5px $shadow-dark;
   }
+}
+
+.text-center {
+  text-align: center;
 }

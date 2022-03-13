@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -9,11 +9,9 @@ import Team from "./pages/Team/team";
 import Blog from "./pages/Blog/blog";
 import Contact from "./pages/Contact/contact";
 import Webteam from "./pages/Webteam/webteam";
+import NotFound from "./pages/NotFound";
 
-import { memberDetails } from "./config/memberDetails";
-import { webTeamDetails } from "./config/webTeamDetails";
-import { courseDetails } from "./config/courseDetails";
-import { cardDetails } from "./config/cardDetails";
+import Article from "./pages/Article/Article";
 
 function App() {
   return (
@@ -21,17 +19,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
-        <Route
-          path="/courses"
-          element={<Courses courseList={courseDetails} />}
-        />
-        <Route path="/team" element={<Team userList={memberDetails} />} />
-        <Route path="/blog" element={<Blog cardList={cardDetails} />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
-        <Route
-          path="/webteam"
-          element={<Webteam webTeamList={webTeamDetails} />}
-        />
+        <Route path="/webteam" element={<Webteam />} />
+
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/article" element={<Article />} />
+
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

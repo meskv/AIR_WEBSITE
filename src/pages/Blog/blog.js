@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CardList from "../../components/CardList/CardList";
+import Categories from "../../components/Blog Components/Categories/Categories";
 
-export default function Blog(props) {
+const Blog = () => {
   return (
     <>
       <Navbar />
@@ -17,14 +18,17 @@ export default function Blog(props) {
 
       <hr />
 
-      <main>
-        <div className="post-wrapper container">
-          {/* article posts */}
-          <CardList cardList={props.cardList} />
-          {/* article posts */}
+      <div className="blog-container">
+        <div className="sidebar">
+          <Categories />
         </div>
-      </main>
+        <div className="blog-post-container post">
+          <CardList />
+        </div>
+      </div>
       <Footer />
     </>
   );
-}
+};
+
+export default Blog;

@@ -4,8 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Swiper from "../../components/Swiper/Swiper";
 import Body from "../../components/Body/Body";
 
-
-export default function Home(props) {
+const Home = (props) => {
   return (
     <>
       <Navbar />
@@ -14,4 +13,6 @@ export default function Home(props) {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

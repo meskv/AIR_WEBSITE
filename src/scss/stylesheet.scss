@@ -14,16 +14,20 @@
 @import "./swiper";
 @import "./footer";
 
+@import "./blog";
+@import "./article";
+@import "./post";
+@import "./admin";
 
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
 html::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.5rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -122,8 +126,6 @@ html {
     font-weight: 550;
     color: $orange;
   }
-
-
 }
 
 .page-subtitle {

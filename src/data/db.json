@@ -1,34 +1,84 @@
 {
-  "blogs": [
+  "posts": [
     {
-      "author": "author name",
-      "date": "01 01 2022",
-      "title": "Why technical knowledge is important 1",
-      "image": "/images/Home/bg1.jpg",
-      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
-      "body": "fwgagragrargarhae",
-      "link": "link",
       "id": 1
     },
     {
+      "id": 2,
       "date": "01 01 2022",
       "author": "author name",
       "title": "Why technical knowledge is important 2",
       "image": "./images/Home/bg1.jpg",
       "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!",
-      "body": "fwgagragrargarhae",
-      "link": "link",
-      "id": 2
+      "body": "fwgagragrargarhae"
     },
     {
+      "id": 3,
       "date": "2022-02-24",
       "author": "Author Name",
       "title": "Title 3",
       "image": "",
       "description": "Blog Description",
-      "body": "Blog Body",
-      "link": "",
-      "id": 3
+      "body": "Blog Body"
+    },
+    {
+      "id": 4,
+      "image": "/images/Home/bg1.jpg",
+      "author": "username",
+      "category": "Big Data",
+      "createdDate": "01 01 2022",
+      "title": "Course 1",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    }
+  ],
+  "posts1": [
+    {
+      "image": "/images/Home/bg1.jpg",
+      "author": "username",
+      "category": "Big Data",
+      "createdDate": "01 01 2022",
+      "title": "Course 1",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    },
+    {
+      "image": "./images/Home/bg1.jpg",
+      "author": "username",
+      "category": "Robotics",
+      "createdDate": "01 01 2022",
+      "title": "Course 1",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    },
+    {
+      "image": "./images/Home/bg1.jpg",
+      "author": "user 2",
+      "category": "Machine Learning",
+      "createdDate": "01 01 2022",
+      "title": "Course 2",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    },
+    {
+      "image": "./images/Home/bg1.jpg",
+      "author": "user3",
+      "category": "Artificial Intelligence",
+      "createdDate": "01 01 2022",
+      "title": "Course 2",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    },
+    {
+      "image": "./images/Home/bg1.jpg",
+      "author": "username",
+      "category": "Deep Learning",
+      "createdDate": "01 01 2022",
+      "title": "Course 2",
+      "description": "This post will present it amet consectetur, adipisicing elit. Optio ea explicabo aspernatur. Voluptates eligendi explicabo provident, iusto voluptatibus itaque ut ab vel incidunt!"
+    }
+  ],
+  "singlePost": [
+    {
+      "id": "",
+      "body": {
+        "domElement": "value"
+      }
     }
   ]
 }
